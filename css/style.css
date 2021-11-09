@@ -19,6 +19,7 @@
 .logo{
     padding-top: 20px;
     margin-right: 40px;
+    margin-left: 10px;
 }
 
 .row::after{
@@ -39,7 +40,7 @@ li{
     list-style: none;
     display: inline-block;
     line-height: 70px;
-    margin-right: 40px;
+    margin-right: 25px;
 }
 
 .button{
@@ -53,4 +54,46 @@ li{
 
 .button:hover{
     text-decoration: underline;
+}
+
+/* Jumbotron */
+
+.jumbo-container{
+    height: 600px;
+    position: relative;
+    background: #B4D0E7;
+}
+
+.jumbo-content{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.jumbo-content h1{
+    font-size: 58px;
+    padding-top: 80px;
+}
+
+.jumbo-content p{
+    width: 300px;
+    margin-top: 20px;
+}
+
+.jumbo-text{
+    margin-bottom: 30px;
+}
+
+p .button{
+    line-height: 150px;
+}
+
+.img-container{
+    position: absolute;
+    z-index: 1001;
+    left: 450px;
+    top: 260px;
+}
+
+.jumbo-img{
+    width: 700px;
 }
