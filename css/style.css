@@ -10,9 +10,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+hr{
+    border: 1px #ccc solid;
+}
+
 .nav-container{
     height: 70px;
 }
+
 
 /* NavBar */
 
@@ -47,8 +52,8 @@ li{
     background: #0061FF;
     color: white;
     padding: 0 20px;
+    text-align: center;
     height: 40px;
-    vertical-align: middle;
     line-height: 40px;
 }
 
@@ -96,4 +101,97 @@ p .button{
 
 .jumbo-img{
     width: 700px;
+}
+
+/* Section */
+
+section{
+    width: 1000px;
+    margin: 150px auto;
+}
+
+.content-sec h2{
+    font-size: 40px;
+}
+
+.opt-button{
+    display: inline-block;
+    margin: 50px 30px 40px 0;
+}
+
+.col-title{
+    text-align: center;
+    margin: 8px auto;
+}
+
+.col-price h3{
+    font-size: 25px;
+}
+
+.col-price span{
+    color: rgb(121, 121, 121);
+}
+
+span{
+    text-align: middle;
+}
+
+.col-content{
+    padding: 30px;
+    font-size: 13px;
+}
+
+.col-price{
+    line-height: 5px;
+    margin-bottom: 50px;
+}
+
+p{
+    margin: 30px 0 30px 0;
+}
+
+h4{
+    margin: 30px 0 30px 0; 
+}
+
+.col-salient hr{
+    width: 50px;
+}
+
+.col-salient i{
+    color: #0061FF;
+}
+
+.left-col{
+    border: 1px #ccc solid;
+    width: 30%;
+    height: 1000px;
+}
+
+.mid-col{
+    border: 1px #ccc solid;
+    width: 30%;
+    height: 1000px;
+    margin: 0 50px;
+}
+
+.right-col{
+    border: 1px #ccc solid;
+    width: 30%;
+    height: 1000px;
+}
+
+.bottom-col{
+    border: 1px #ccc solid;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.bottom-col .button{
+    padding: 0 50px;
+}
+
+.bottom-col .col-content p{
+    font-size: 13px;
+    margin-bottom: 0px;
 }
