@@ -1,36 +1,21 @@
 *{
-    margin: 0;
     padding: 0;
-    border: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-.container{
-    width: 1200px;
+body{
     font-family: 'Open Sans', sans-serif;
 }
-
-hr{
-    border: 1px #ccc solid;
-}
-
-.nav-container{
-    height: 70px;
-}
-
-
-/* NavBar */
-
-.logo{
-    padding-top: 20px;
-    margin-right: 40px;
-    margin-left: 10px;
-}
-
 .row::after{
     content: "";
     display: table;
     clear: both;
+}
+.container{
+    margin: 0 auto;
+}
+.small-container{
+    width: 1200px;
 }
 
 .fl{
@@ -41,157 +26,534 @@ hr{
     float: right;
 }
 
-li{
-    list-style: none;
-    display: inline-block;
-    line-height: 70px;
-    margin-right: 25px;
-}
-
 .button{
-    background: #0061FF;
+    background-color: rgb(76, 126, 250);
     color: white;
-    padding: 0 20px;
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.button-2{
+    color: rgb(39, 160, 252);
+}
+.button-3{
+    color: black;
+    padding: 5px 15px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.button-4{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+.color-white{
+    color: white;
 }
 
-.button:hover{
+.link-dropbox{
+    color: black;
+}
+
+/* -------------------utility---------------------- */
+
+/* inizio header */
+
+/* 
+nav{
+    height: 80px;
+    line-height: 80px;
+    padding: 0 10px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 30px;
+}
+nav ul li a:hover{
     text-decoration: underline;
+    color: lightblue;
+}
+.content-logo img{
+    vertical-align: middle;
+    
+} */
+
+/* prova con flex */
+
+header{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+}
+.content-logo{
+    margin: 0 20px;
 }
 
-/* Jumbotron */
+header li{
+    display: inline-block;
+    list-style: none;
+}
+header li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 30px;
+}
+.login-area .button{
+    margin: 0 20px;
+}
 
-.jumbo-container{
-    height: 600px;
+    
+
+/* ----------------fine header---------------- */
+
+/*-----------------inizio main jumbotron----------------- */
+
+.box-1{
+    background-color: lightblue;
+    height: 650px;
+    margin-bottom: 150px;
+}
+
+.big-container{
+    width: 1700px;
+}
+
+.jumbotron h1{
+    padding: 25px 0;
+    font-size: 70px;
+}
+
+.row .testo{
+    width: 40%;
+    font-size: 14px;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.row .immagine{
+    width: 60%;
     position: relative;
-    background: #B4D0E7;
+    /* border: 1px solid rebeccapurple; */
+}
+.fl.testo p{
+    font-size: 20px;
+    margin: 10px 0;
 }
 
-.jumbo-content{
-    width: 1000px;
-    margin: 0 auto;
+.testo a{
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 20px;
 }
 
-.jumbo-content h1{
-    font-size: 58px;
-    padding-top: 80px;
+.testo .delete{
+    color: black;
+    background-color: none;
 }
 
-.jumbo-content p{
-    width: 300px;
-    margin-top: 20px;
+.testo .fas{
+    margin-top: 10px;
+    font-size: 40px;
+    color: black;
 }
 
-.jumbo-text{
+.immagine img{
+    width: 800px;
+    position:absolute
+}
+
+/* -----------------fine jumbotron----------------- */
+
+/* -----------------box-2------------------ */
+.box-2{
+    margin-bottom: 100px;
+}
+
+.box-2 h1{
+    margin: 50px 0;
+}
+
+.plane{
+    width: calc(33.3% - 20px);
+}
+
+.plane.plane-central{
+    margin: 0 30px;
+}
+.checkbox{
     margin-bottom: 30px;
 }
 
-p .button{
-    line-height: 150px;
-}
-
-.img-container{
-    position: absolute;
-    z-index: 1001;
-    left: 450px;
-    top: 260px;
-}
-
-.jumbo-img{
-    width: 700px;
-}
-
-/* Section */
-
-section{
-    width: 1000px;
-    margin: 150px auto;
-}
-
-.content-sec h2{
-    font-size: 40px;
-}
-
-.opt-button{
-    display: inline-block;
-    margin: 50px 30px 40px 0;
-}
-
-.col-title{
+.type{
+    border: 1px solid lightgray;
     text-align: center;
-    margin: 8px auto;
 }
 
-.col-price h3{
-    font-size: 25px;
+.description{
+    padding: 20px;
+    border: 1px solid lightgrey;
+    height: 800px;
+}
+.cost.info .cost{
+    margin: 30px 0;
+
+}
+.cost{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.renewal{
+    font-size: 12px;
+    color: lightgrey;
+    margin-top: 10px;
 }
 
-.col-price span{
-    color: rgb(121, 121, 121);
+.details{
+    margin: 30px 0;
+}
+.icon{
+    margin-bottom: 20px;
 }
 
-span{
-    text-align: middle;
+.details ul{
+    list-style: none;
+}
+.details ul li{
+    position: relative;
+    padding-left: 25px;
+}
+.details ul li::before{
+    position: absolute;
+    top: 4px;
+    left: 0;
 }
 
-.col-content{
-    padding: 30px;
-    font-size: 13px;
+.type.single::before{
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 10px;
 }
 
-.col-price{
-    line-height: 5px;
+.type.team::before{
+    content: "\f1ad";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+.icon.user::before{
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+
+}
+.icon.user-single::before{
+    content: "\f234";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 5px;
+
+}
+.icon.space::before{
+    content: "\f07b";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+
+}
+.icon.function::before{
+    content: "\f304";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.icon.function-special::before{
+    content: "\f5b8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+}
+
+.cost-info a{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.review-plane ul{
+    list-style: none;
+}
+
+.review-plane ul li{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.review-plane ul li::before{
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.review-plane ul li::before{
+    content: "\f00c";
+    color: #5797ff;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.review-plane h2{
+    margin-bottom: 25px;
+}
+
+/*-------------------fine box-2------------------- */
+
+/*-------------------inizio box-3------------------- */
+.box-3{
+    margin-bottom: 100px;
+}
+.box-left{
+    width: 70%;
+}
+.sales-support{
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+.box-right{
+    width: 30%;
+}
+.fl.box-left h3{
+    margin: 30px 0;
+}
+.fl.box-right p{
+    text-align: center;
+}
+
+/*-------------------fine box-3------------------- */
+
+/*-------------------inizio box-4------------------- */
+.box-4{
+    margin-bottom: 100px;
+}
+
+
+.image-box-4{
+    width: 50%;
+}
+.text-meet-partner{
+    width: 50%;
+    padding: 30px 30px;
+}
+
+.image-box-4 img{
+    width: 100%;
+    padding: 0;
+}
+
+.text-meet-partner h2{
+    font-size: 30px;
+}
+
+.text-meet-partner p{
+    font-size: 16px;
+    margin: 25px 0;
+}
+/* ------------------------fine box-4---------------------- */
+
+/* ------------------inizio box-5----------------------- */
+.fl.card{
+    width: calc(33.3% - 20px);
+    height: 650px;
+}
+
+.card.card-central{
+    margin: 0 30px;
+}
+
+.col-img{
+    width: 100%;
+    
+}
+.col-img img{
+    width: 100%;
+}
+
+.content-card h2{
+    margin: 20px 0;
+}
+
+.box-5 h1{
     margin-bottom: 50px;
 }
 
-p{
-    margin: 30px 0 30px 0;
+
+
+/* ------------------inizio box-6----------------------- */
+.box-6 a{
+    margin: 30px 0;
+    display: inline-block;
+}
+.logo-client{
+    width: 33.3%;
+}
+.logo{
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+.logo-1{
+    border: 20px solid rgb(151, 255, 135);
+    background-color: lightgreen;
+}
+.logo-2{
+    background-color: purple;
+}
+.logo-3{
+    background-color: lightblue;
+}
+.logo-4, .logo-5{
+    background-color: red;
+}
+.logo-6{
+    background-color: rgb(115, 213, 255);
+}
+.logo-7{
+    background-color: rgb(0, 45, 225);
+}
+.logo-8{
+    background-color: rgb(255, 255, 64);
+}
+.logo img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%);   
+    
+    
 }
 
-h4{
-    margin: 30px 0 30px 0; 
+.description-client{
+    padding: 30px;
+    background-color: rgb(237, 237, 237);
+    height: 600px;
 }
 
-.col-salient hr{
-    width: 50px;
+.description-client img{
+    width: 300px;
 }
 
-.col-salient i{
-    color: #0061FF;
+.text-speech p{
+    font-size: 26px;
+    margin: 80px 0;
 }
 
-.left-col{
-    border: 1px #ccc solid;
-    width: 30%;
-    height: 1000px;
+
+/* ---------------fine box-6-------------- */
+
+/* ---------------inizio box-7-------------- */
+.box-7{
+    background-color: lightskyblue;
+    height: 300px;
+    line-height: 300px;
+}
+.box-7 .content-text{
+    text-align: center;
+    width: 70%;
 }
 
-.mid-col{
-    border: 1px #ccc solid;
-    width: 30%;
-    height: 1000px;
-    margin: 0 50px;
+.box-7 .fl h2{
+    font-size: 40px;
+    color: purple;
 }
 
-.right-col{
-    border: 1px #ccc solid;
-    width: 30%;
-    height: 1000px;
+
+
+/* ---------------fine box-7-------------- */
+
+/* ---------------inizio box-8-------------- */
+
+.box-8{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.question p{
+    margin: 25px 0;
+    font-weight: bold;
+}
+.question hr{
+    border: 0.2px solid rgb(235, 235, 235);
+}
+.question h1{
+    margin-bottom: 50px;
+}
+.question p::after{
+    content: "\f078";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    padding-left: 500px;
 }
 
-.bottom-col{
-    border: 1px #ccc solid;
-    width: 100%;
-    margin-top: 30px;
+/* ----------------fine box-8------------------*/
+
+/* ----------------inizio footer------------------*/
+
+.legend{
+    width: 20%;
+    height: 400px;
 }
 
-.bottom-col .button{
-    padding: 0 50px;
+.legend-1{
+    border-bottom: 1px solid lightgrey;
 }
 
-.bottom-col .col-content p{
-    font-size: 13px;
-    margin-bottom: 0px;
+footer{
+    background-color: black;
+    height: 600px;
+}
+.box-9{
+    padding-top: 100px;
+}
+
+.fl.legend ul{
+    list-style: none;
+}
+.fl.legend ul li{
+    margin: 10px 0;
+}    
+.fl.legend ul li a{
+    text-decoration: none;
+    color: white;
+}    
+.language{
+    color: white;
+    margin-top: 50px;
+}
+
+.language span::before{
+    content: "\f7a2";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.language span::after{
+    content: "\f077";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.language span{
+    color: rgb(181, 181, 181);
+}
+.legend ul h2{
+    margin-bottom: 40px;
 }
